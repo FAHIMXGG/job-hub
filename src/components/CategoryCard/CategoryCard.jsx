@@ -2,7 +2,7 @@ import React from 'react';
 
 const CategoryCard = ({data}) => {
     const {image, heading, paragraph} = data
-    console.log(image)
+    //console.log(image)
     return (
         <div>
             <div >

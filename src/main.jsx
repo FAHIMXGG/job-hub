@@ -9,6 +9,7 @@ import {
 } from "react-router-dom";
 import Home from './components/Home/Home';
 import JobCategory from './components/JobCategory/JobCategory';
+import JobCard from './components/JobCard/JobCard';
 
 
 const router = createBrowserRouter([
@@ -22,7 +23,9 @@ const router = createBrowserRouter([
         loader: () => fetch('JobCategory.json')
       },
       {
-        
+        path: "/",
+        element: <JobCard></JobCard>,
+        loader: () => fetch('JobData.json')
       },
       {
         
