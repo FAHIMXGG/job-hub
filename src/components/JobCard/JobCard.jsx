@@ -1,14 +1,34 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { useLoaderData } from 'react-router-dom';
+import JobCardInfo from '../JobCardInfo/JobCardInfo';
 
 const JobCard = () => {
 
-    const jobsData = useLoaderData();
-    console.log(jobsData);
+    const [jobsData, setJobsData] = useState([]);
+    useEffect(() => {
+        fetch('JobData.json')
+            .then(res => res.json())
+            .then(data => setJobsData(data))
+    }, [])
+
+    //console.log(jobsData);
 
     return (
         <div>
-            
+            <div className='text-center mb-7'>
+                <h1 className='text-4xl font-bold mb-4'>Featured Jobs</h1>
+                <p>Explore thousands of job opportunities with all the information you need. Its your future</p>
+            </div>
+            <div className='md:mx-60 '>
+                <div className='grid lg:grid-cols-2 justify-items-center gap-5'>
+                    {
+                        jobsData.map(jobData => <JobCardInfo
+                            key={jobData._id}
+                            jobData={jobData}
+                        ></JobCardInfo>)
+                    }
+                </div>
+            </div>
         </div>
     );
 };
