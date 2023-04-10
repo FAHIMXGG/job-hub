@@ -14,6 +14,7 @@ import HomePage from './components/HomePage/HomePage';
 import Job from './components/Job/Job';
 import Details from './components/JobCardInfo/Details/Details';
 import AppliedJob from './components/AppliedJob/AppliedJob';
+import Chart from './components/Chart/Chart';
 
 
 const router = createBrowserRouter([
@@ -45,7 +46,8 @@ const router = createBrowserRouter([
         element: <AppliedJob></AppliedJob>
       },
       {
-        
+        path: "/Statistics",
+        element: <Chart></Chart>
       },
     ]
   },

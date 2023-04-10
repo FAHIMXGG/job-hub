@@ -26,7 +26,7 @@ const Header = () => {
                 </div>
                 <Navbar.Collapse>
                     <Link to="/">Home</Link>
-                    <Link to="/">Statistics</Link>
+                    <Link to="/Statistics">Statistics</Link>
                     <Link to="/appliedJob"> Applied Jobs</Link>
                     <Link to="/"> Blog</Link>
                     

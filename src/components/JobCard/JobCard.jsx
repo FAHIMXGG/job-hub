@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import JobCardInfo from '../JobCardInfo/JobCardInfo';
 import Job from '../Job/Job';
 
+
 const JobCard = () => {
 
     const [jobsData, setJobsData] = useState([]);
@@ -15,6 +16,7 @@ const JobCard = () => {
 
     return (
         <div>
+           
             <div className='text-center mb-7'>
                 <h1 className='text-4xl font-bold mb-4'>Featured Jobs</h1>
                 <p>Explore thousands of job opportunities with all the information you need. Its your future</p>
