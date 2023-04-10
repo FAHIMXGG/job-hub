@@ -35,7 +35,7 @@ const AppliedJob = () => {
             <div className='bg-[#F9F8FF] text-center mb-5'>
                 <h1 className='font-bold text-2xl py-32'>Job Details</h1>
             </div>
-            <div className='mx-72 mt-5'>
+            <div className='md:mx-72 mt-5 p-5 md:p-0'>
             {
                 cart.map(data => <AppliedJobDetails
                 key={data._id}

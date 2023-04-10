@@ -9,8 +9,8 @@ const AppliedJobDetails = ({ data }) => {
 
 
             <div>
-                <div className='flex justify-between items-center border mb-5 w-full pr-10 rounded'>
-                    <div className='flex p-5 gap-5'>
+                <div className='md:flex justify-between items-center border mb-5 w-full md:pr-10 rounded'>
+                    <div className='md:flex p-5 gap-5'>
                         <div className='py-12 bg-[#F4F4F4] px-5 w-40'>
                             <img src={picture} alt="" />
                         </div>
@@ -36,7 +36,7 @@ const AppliedJobDetails = ({ data }) => {
                             </div>
                         </div>
                     </div>
-                    <div className=''>
+                    <div className='mx-auto text-end md:mx-0'>
                         <Link to={`/job`} state={{ details: data }}><button style={ {background:' linear-gradient(90deg, #7E90FE 0%, #9873FF 100%)'}}className=' px-5 py-2 text-white font-bold rounded'>View Details</button></Link>
                     </div>
 

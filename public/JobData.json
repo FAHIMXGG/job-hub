@@ -67,5 +67,39 @@
         "ex": "2-3 Years in this field." ,
         "type1": "Remote" ,
         "type2": "Full Time" 
+      },
+    {
+        "_id": "555",
+        "picture": "https://cdn.discordapp.com/attachments/1094672876969398413/1094731450852585634/Group_10021.png",
+        "name": "Airbnb",
+        "salary": "80K - 100K",
+        "JobTitle": "Software Engineer",
+        "Phone": "01750-00 00 00",
+        "email": "info@gmail.com",
+        "sAddress": "Dhaka, Bangladesh",
+        "address": "Dhanmondi 32, Sukrabad, Dhaka, Bangladesh",
+        "description": "A UI/UX (User Interface/User Experience) designer is responsible for designing and creating engaging and effective interfaces for software and web applications. This includes designing the layout, visual design, and interactivity of the user interface.",
+        "responsibility": "Collaborating with cross-functional teams: UI/UX designers often work closely with other teams, including product management, engineering, and marketing, to ensure that the user interface is aligned with business and technical requirements. You will need to be able to effectively communicate your design ideas and gather feedback from other team members.",
+        "req": "Bachelor degree to complete any reputational university.",
+        "ex": "2-3 Years in this field." ,
+        "type1": "Remote" ,
+        "type2": "Full Time" 
+      },
+    {
+        "_id": "666",
+        "picture": "https://cdn.discordapp.com/attachments/1094672876969398413/1094731450852585634/Group_10021.png",
+        "name": "Airbnb",
+        "salary": "100K - 150K",
+        "JobTitle": "Senior Software Engineer",
+        "Phone": "01750-00 00 00",
+        "email": "info@gmail.com",
+        "sAddress": "Dhaka, Bangladesh",
+        "address": "Dhanmondi 32, Sukrabad, Dhaka, Bangladesh",
+        "description": "A UI/UX (User Interface/User Experience) designer is responsible for designing and creating engaging and effective interfaces for software and web applications. This includes designing the layout, visual design, and interactivity of the user interface.",
+        "responsibility": "Collaborating with cross-functional teams: UI/UX designers often work closely with other teams, including product management, engineering, and marketing, to ensure that the user interface is aligned with business and technical requirements. You will need to be able to effectively communicate your design ideas and gather feedback from other team members.",
+        "req": "Bachelor degree to complete any reputational university.",
+        "ex": "2-3 Years in this field." ,
+        "type1": "Remote" ,
+        "type2": "Full Time" 
       }
 ]
