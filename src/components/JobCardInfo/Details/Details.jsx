@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useLocation } from 'react-router-dom';
+import { addToDb } from '../../../utilities/fakedb';
 
 const Details = () => {
     const location = useLocation();
@@ -7,7 +8,16 @@ const Details = () => {
 
     const { JobTitle, description, email, ex, name, picture, req, responsibility, sAddress, salary, type1, type2, _id, Phone, address } = details;
 
-    console.log(details);
+    
+    const [cart, setCart] = useState([])
+    //console.log(cart);
+    const handleAddInfo =  (_id) =>{
+            const newCart = [...cart, details]
+            setCart(newCart)
+            addToDb(_id)
+    }
+
+
     return (
         <div>
             <div className='bg-[#F9F8FF] text-center mb-5'>
@@ -35,7 +45,7 @@ const Details = () => {
                         <div><p><span className='font-bold text-black'>Email: </span>{email}</p></div>
                         <div><p><span className='font-bold text-black'>Address: </span>{address}</p></div>
                     </div>
-                    <button className='bg-[#818DFE] w-full rounded py-3 mt-5 text-center text-white'>Apply Now</button>
+                    <button onClick={() => handleAddInfo(_id)} className='bg-[#818DFE] w-full rounded py-3 mt-5 text-center text-white'>Apply Now</button>
                 </div>
             </div>
         </div>

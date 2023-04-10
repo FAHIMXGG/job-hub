@@ -11,7 +11,6 @@ const JobCardInfo = ({jobData}) => {
 
 
 
-
     return (
         <div className='bg-[#F9F8FF] w-full py-10 pl-10 border rounded'>
             <img className='mb-5' src={picture} alt="" />
