@@ -25,7 +25,7 @@ const Details = () => {
                 <h1 className='font-bold text-2xl py-32'>Job Details</h1>
             </div>
 
-            <div className='flex md:ml-28 md:mr-28 gap-5 text-[#757575]'>
+            <div className='md:flex md:ml-28 md:mr-28 gap-5 text-[#757575] p-5 md:p-0'>
                 <div className='mt-5 '>
                     <p className='mb-5'><span className='font-bold text-black'>Job Description: </span>{description}</p>
                     <p className='mb-5'><span className='font-bold text-black'>Job Responsibility: </span>{responsibility}</p>
@@ -34,7 +34,7 @@ const Details = () => {
                     <p className='font-bold text-black'>Experiences:</p>
                     <p>{ex}</p>
                 </div>
-                <div className='w-6/12'>
+                <div className='md:w-6/12 mt-10 md:mt-0'>
                     <div className='bg-[#F4F1FF] p-10'>
                         <h4 className='font-bold text-xl mb-5 text-black'>Job Details</h4>
                         <hr className='mb-5 border-[#c6ccf5]' />
