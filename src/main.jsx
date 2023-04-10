@@ -11,6 +11,8 @@ import Home from './components/Home/Home';
 import JobCategory from './components/JobCategory/JobCategory';
 import JobCard from './components/JobCard/JobCard';
 import HomePage from './components/HomePage/HomePage';
+import Job from './components/Job/Job';
+import Details from './components/JobCardInfo/Details/Details';
 
 
 const router = createBrowserRouter([
@@ -23,17 +25,20 @@ const router = createBrowserRouter([
         element: <HomePage></HomePage>,
         
       },
-      {
-        path: "/",
-        element: <JobCategory></JobCategory>,
-        loader: () => fetch('JobCategory.json')
-      },
+      // {
+      //   path: "/",
+      //   element: <JobCategory></JobCategory>,
+      //   loader: () => fetch('JobCategory.json')
+      // },
       // {
       //   path: "/",
       //   element: <JobCard></JobCard>,
       //   loader: () => fetch('JobData.json')
       // },
       {
+        path: "/job",
+        element: <Details></Details>,
+        
         
       },
       {

@@ -1,8 +1,17 @@
-import React from 'react';
+import React, { createContext, useContext, useState } from 'react';
+import { Link } from 'react-router-dom';
+//export const JobData = createContext()
+
 
 const JobCardInfo = ({jobData}) => {
-    console.log(jobData)
-    const {picture, JobTitle, name, type1, type2, sAddress, salary} = jobData
+    //console.log(jobData)
+    const { picture, JobTitle, name, type1, type2, sAddress, salary, _id } = jobData
+
+    
+
+
+
+
     return (
         <div className='bg-[#F9F8FF] w-full py-10 pl-10 border rounded'>
             <img className='mb-5' src={picture} alt="" />
@@ -25,7 +34,15 @@ const JobCardInfo = ({jobData}) => {
                     <p>{salary}</p>
                 </div>
             </div>
-            <button className='bg-[#7E90FE] px-5 py-2 text-white font-bold rounded'>View Details</button>
+
+            {/* onClick={() => handleInfo(jobData)} */}
+            
+                <Link   to={`/job`} state={{details:jobData}}><button className='bg-[#7E90FE] px-5 py-2 text-white font-bold rounded'>View Details</button></Link>
+
+            
+
+
+
         </div>
     );
 };

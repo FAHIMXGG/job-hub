@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { useLoaderData } from 'react-router-dom';
 import JobCardInfo from '../JobCardInfo/JobCardInfo';
+import Job from '../Job/Job';
 
 const JobCard = () => {
 
@@ -11,7 +11,7 @@ const JobCard = () => {
             .then(data => setJobsData(data))
     }, [])
 
-    //console.log(jobsData);
+    
 
     return (
         <div>
@@ -25,8 +25,10 @@ const JobCard = () => {
                         jobsData.map(jobData => <JobCardInfo
                             key={jobData._id}
                             jobData={jobData}
+                            
                         ></JobCardInfo>)
                     }
+                    
                 </div>
             </div>
         </div>

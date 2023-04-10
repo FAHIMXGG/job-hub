@@ -1,5 +1,6 @@
 import { Button, Navbar } from 'flowbite-react';
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
 
@@ -7,14 +8,14 @@ const Header = () => {
         <div className=''>
 
 
-            <Navbar className='bg-[#F9F9FF] '
+            <Navbar className='bg-[#f7f6fb]'
                 fluid={true}
                 rounded={true}
             >
                 <Navbar.Brand className='md:ml-24' href="">
                     <h1></h1>
                     <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">
-                    DaimJobHub
+                        DaimJobHub
                     </span>
                 </Navbar.Brand>
                 <div className="flex md:order-2 md:mr-24">
@@ -24,22 +25,13 @@ const Header = () => {
                     <Navbar.Toggle />
                 </div>
                 <Navbar.Collapse>
-                    <Navbar.Link
-                        href="/navbars"
-                        active={true}
-                    >
-                        Home
-                    </Navbar.Link>
-                    <Navbar.Link href="/navbars">
-                    Statistics
-                    </Navbar.Link>
-                    <Navbar.Link href="/navbars">
-                    Applied Jobs
-                    </Navbar.Link>
-                    <Navbar.Link href="/navbars">
-                    Blog
-                    </Navbar.Link>
+                    <Link to="/">Home</Link>
+                    <Link to="/">Statistics</Link>
+                    <Link to="/"> Applied Jobs</Link>
+                    <Link to="/"> Blog</Link>
                     
+                
+
                 </Navbar.Collapse>
             </Navbar>
 
