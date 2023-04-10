@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
 
-const JobInfoData = ({d}) => {
+const JobInfoData = () => {
 
-    console.log(d)
+    
     return (
         <div>
-            {d._id}
+            
         </div>
     );
 };

@@ -14,7 +14,7 @@ const Header = () => {
             >
                 <Navbar.Brand className='md:ml-24' href="">
                     <h1></h1>
-                    <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">
+                    <span className="self-center whitespace-nowrap md:text-xl font-semibold dark:text-white">
                         DaimJobHub
                     </span>
                 </Navbar.Brand>

@@ -6,7 +6,7 @@ const CategoryCard = ({data}) => {
     return (
         <div>
             <div >
-                <div className='bg-[#FAF8FF] p-8 rounded md:w-96'>
+                <div className='bg-[#FAF8FF] p-8 rounded md:w-96 mb-5 md:mb-0'>
                     <img className='bg-[#EDEEFF] p-4 rounded mb-5' src={image} alt="" />
                     <h2 className='text-xl font-bold text-[#474747] mb-2'>{heading}</h2>
                     <p className='text-[#A3A3A3]'>{paragraph}</p>
