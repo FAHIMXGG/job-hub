@@ -16,16 +16,19 @@ import Details from './components/JobCardInfo/Details/Details';
 import AppliedJob from './components/AppliedJob/AppliedJob';
 import Chart from './components/Chart/Chart';
 import Blog from './components/Blog/Blog';
+import ErrorPage from './components/ErrorPage/ErrorPage';
 
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Home></Home>,
+    errorElement: <ErrorPage />,
     children: [
       {
         path: "/",
         element: <HomePage></HomePage>,
+        
         
       },
       // {

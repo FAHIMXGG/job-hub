@@ -20,14 +20,14 @@ const JobCategory = () => {
         <div className='mb-16'>
             
             <div>
-                <div className='p-5 md:p-0 md:flex justify-evenly items-center bg-[#F9F8FF]'>
+                <div className='p-5 md:p-0 md:flex justify-evenly items-center bg-[#F9F8FF] md:px-10'>
                     <div>
                         <h1 className='md:text-8xl font-semibold mb-10'>One Step <br /> Closer To Your <br /> <span className='text-[#907DFF]'>Dream Job</span></h1>
                         <p>
                             Explore thousands of job opportunities with all the <br />
                             information you need. Its your future. Come find it. Manage all <br /> your job application from start to finish.
                         </p>
-                        <button className='mx-14 md:mx-0 bg-[#907DFF] px-8 py-3 font-semibold text-lg text-white rounded-md mt-10'>Get Started</button>
+                        <button className=' md:mx-0 bg-[#907DFF] px-8 py-3 font-semibold text-lg text-white rounded-md mt-10'>Get Started</button>
                     </div>
                     <div>
                         <img src="https://cdn.discordapp.com/attachments/1094651413235253289/1094651512782864465/P3OLGJ1.png" alt="" />
