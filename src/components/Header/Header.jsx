@@ -19,7 +19,7 @@ const Header = () => {
                     </span>
                 </Navbar.Brand>
                 <div className="flex md:order-2 md:mr-24">
-                    <Button>
+                    <Button style={ {background:' linear-gradient(90deg, #7E90FE 0%, #9873FF 100%)'}}>
                         Get started
                     </Button>
                     <Navbar.Toggle />

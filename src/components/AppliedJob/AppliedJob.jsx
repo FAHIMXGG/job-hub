@@ -31,13 +31,18 @@ const AppliedJob = () => {
 
      console.log(cart)
     return (
-        <div className='mx-72 mt-5'>
+        <div >
+            <div className='bg-[#F9F8FF] text-center mb-5'>
+                <h1 className='font-bold text-2xl py-32'>Job Details</h1>
+            </div>
+            <div className='mx-72 mt-5'>
             {
                 cart.map(data => <AppliedJobDetails
                 key={data._id}
                 data={data}
                 ></AppliedJobDetails>)
             }
+            </div>
         </div>
     );
 };
