@@ -21,3 +21,4 @@
 12. Job details Toast and css change by click
 13. footer
 14. Active Link
+15. 2 Json data public
