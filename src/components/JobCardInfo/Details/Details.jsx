@@ -43,7 +43,7 @@ const Details = () => {
     
 
     return (
-        <div>
+        <div className='mb-10'>
             <div className='bg-[#F9F8FF] text-center mb-5'>
                 <h1 className='font-bold text-2xl py-32'>Job Details</h1>
             </div>

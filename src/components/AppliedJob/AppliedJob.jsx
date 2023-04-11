@@ -49,7 +49,7 @@ const AppliedJob = () => {
                 </div>
             </form> */}
             <div className='md:mx-60 mx-5'>
-                <div className='flex justify-end md:pr-12'>
+                <div className='flex justify-end md:pr-12 border-[#7E90FE]'>
                     <select className='rounded' onChange={(e) => setSearch(e.target.value)}>
                         <option value="">All</option>
                         <option value="onsite">Onsite</option>

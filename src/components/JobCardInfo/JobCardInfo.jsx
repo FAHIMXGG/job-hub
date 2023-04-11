@@ -13,7 +13,7 @@ const JobCardInfo = ({jobData}) => {
 
 
     return (
-        <div className='bg-[#F9F8FF] w-full py-10 pl-10 border rounded'>
+        <div className='bg-[#F9F8FF] w-full py-10 pl-10 border rounded mb-10'>
             <img className='mb-5' src={picture} alt="" />
             <h3 className='text-xl font-medium text-[#474747]'>{JobTitle}</h3>
             <h5 className='mb-2 text-[#757575]'>{name}</h5>
