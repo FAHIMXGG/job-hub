@@ -2,6 +2,7 @@ import { Button, Navbar } from 'flowbite-react';
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Header.css'
+import ActiveLink from '../ActiveLink/ActiveLink';
 
 const Header = () => {
 
@@ -26,10 +27,10 @@ const Header = () => {
                     <Navbar.Toggle />
                 </div>
                 <Navbar.Collapse>
-                    <Link to="/">Home</Link>
-                    <Link to="/Statistics">Statistics</Link>
-                    <Link to="/appliedJob"> Applied Jobs</Link>
-                    <Link to="/Blog"> Blog</Link>
+                    <ActiveLink to="/">Home</ActiveLink>
+                    <ActiveLink to="/Statistics">Statistics</ActiveLink>
+                    <ActiveLink to="/appliedJob"> Applied Jobs</ActiveLink>
+                    <ActiveLink to="/Blog"> Blog</ActiveLink>
 
 
 
