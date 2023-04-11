@@ -59,7 +59,7 @@ const Details = () => {
                     <p>{ex}</p>
                 </div>
                 <div className='md:w-6/12 mt-10 md:mt-0'>
-                    <div className='bg-[#F4F1FF] p-10'>
+                    <div className='bg-[#F4F1FF] p-10 rounded'>
                         <h4 className='font-bold text-xl mb-5 text-black'>Job Details</h4>
                         <hr className='mb-5 border-[#c6ccf5]' />
                         <div className='flex gap-1 mb-2'>
