@@ -27,7 +27,9 @@ const JobCategory = () => {
                             Explore thousands of job opportunities with all the <br />
                             information you need. Its your future. Come find it. Manage all <br /> your job application from start to finish.
                         </p>
+                        <div className='flex justify-center md:justify-start'>
                         <button className=' md:mx-0 bg-[#907DFF] px-8 py-3 font-semibold text-lg text-white rounded-md mt-10'>Get Started</button>
+                        </div>
                     </div>
                     <div>
                         <img src="https://cdn.discordapp.com/attachments/1094651413235253289/1094651512782864465/P3OLGJ1.png" alt="" />

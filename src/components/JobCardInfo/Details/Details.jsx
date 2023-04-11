@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
 import { useLocation } from 'react-router-dom';
-import { addToDb } from '../../../utilities/fakedb';
+import { addToDb, getShoppingCart } from '../../../utilities/fakedb';
 import { MapPinIcon, CurrencyDollarIcon, CalendarDaysIcon, PhoneIcon, EnvelopeIcon  } from '@heroicons/react/24/solid'
+
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Details = () => {
     const location = useLocation();
@@ -12,18 +15,39 @@ const Details = () => {
     
     const [cart, setCart] = useState([])
     //console.log(cart);
+    let button = "Apply Now";
     const handleAddInfo =  (_id) =>{
             const newCart = [...cart, details]
             setCart(newCart)
             addToDb(_id)
+            if(newCart.length >= 2){
+                notify()
+            }
+            else{
+                notify2()
+            }
+    }
+    if(cart.length > 0){
+        button = <h1 className='font-bold text-[##F9F8FF]'>Applied!!</h1>
+        
     }
 
+    
+
+    const notify = () =>{
+        toast("You Have Already Applied This Job")
+    }
+    const notify2 = () =>{
+        toast("Applied!")
+    }
+    
 
     return (
         <div>
             <div className='bg-[#F9F8FF] text-center mb-5'>
                 <h1 className='font-bold text-2xl py-32'>Job Details</h1>
             </div>
+            
 
             <div className='md:flex md:ml-28 md:mr-28 gap-5 text-[#757575] p-5 md:p-0'>
                 <div className='mt-5 '>
@@ -60,9 +84,10 @@ const Details = () => {
                             <p><span className='font-bold text-black'>Address: </span>{address}</p>
                         </div>
                     </div>
-                    <button style={ {background:' linear-gradient(90deg, #7E90FE 0%, #9873FF 100%)'}} onClick={() => handleAddInfo(_id)} className=' w-full rounded py-3 mt-5 text-center text-white'>Apply Now</button>
+                    <button style={ {background:' linear-gradient(90deg, #7E90FE 0%, #9873FF 100%)'}} onClick={() => handleAddInfo(_id)} className=' w-full rounded py-3 mt-5 text-center text-white'>{button}</button>
                 </div>
             </div>
+            <ToastContainer />
         </div>
     );
 };

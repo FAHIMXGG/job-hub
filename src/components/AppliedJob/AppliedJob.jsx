@@ -35,7 +35,7 @@ const AppliedJob = () => {
     return (
         <div >
             <div className='bg-[#F9F8FF] text-center mb-5'>
-                <h1 className='font-bold text-2xl py-32'>Job Details</h1>
+                <h1 className='font-bold text-2xl py-32'>Applied Job</h1>
             </div>
 
             {/* <form>
